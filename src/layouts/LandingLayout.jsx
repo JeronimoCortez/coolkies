@@ -1,5 +1,6 @@
 import BestSellersSection from "../sections/BestSellersSection";
 import BusinessInquirySection from "../sections/BusinessInquirySection";
+import FloatingWhatsAppButton from "../components/FloatingWhatsAppButton";
 import CustomerTestimonialsSection from "../sections/CustomerTestimonialsSection";
 import FlavorsShowcaseSection from "../sections/FlavorsShowcaseSection";
 import FooterSection from "../sections/FooterSection";
@@ -24,6 +25,7 @@ function LandingLayout() {
       </main>
 
       <FooterSection />
+      <FloatingWhatsAppButton />
     </div>
   );
 }
