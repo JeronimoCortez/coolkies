@@ -14,12 +14,12 @@ function BusinessInquirySection() {
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-          {allFlavors.map((product) => (
-            <CookieCard key={product.id} product={product} compact />
+          {allFlavors.map((product, index) => (
+            <CookieCard key={product.id} product={product} compact revealDelay={index * 80} />
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="reveal mt-10 text-center" data-reveal style={{ "--reveal-delay": "200ms" }}>
           <PrimaryButton
             as="a"
             href={WHATSAPP_URL}

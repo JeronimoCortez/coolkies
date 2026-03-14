@@ -69,29 +69,29 @@ export const testimonials = [
 export const allFlavors = [
   {
     id: 1,
-    name: "Cuchareable Kinder",
+    name: "Cuchareables",
     // price: "$450",
     image: "./cuchareable1.webp",
   },
   {
     id: 2,
-    name: "Cuchareable",
+    name: "Bebidas",
     // price: "$500",
-    image: "/cuchareable.webp",
+    image: "/bebidas.webp",
   },
   {
     id: 3,
 
-    name: "Clasica Chips",
+    name: "Cookies",
     // price: "$420",
-    image: "./chips.webp",
+    image: "./cookie.webp",
   },
   {
     id: 4,
-    name: "Kinder Nutella",
+    name: "Boxs",
     // price: "$480",
     image:
-      "./kinder.webp",
+      "./box.webp",
   },
 ];
 
@@ -111,6 +111,7 @@ export const branches = [
     hours: "Lun a Vie: 10:00 - 19:00, Sáb: 10:00 - 13:00. 17:00 - 20:00",
     phone: WHATSAPP_NUMBER_DISPLAY,
     href: "https://maps.app.goo.gl/4H6fxh1BAjCpXQ4a8",
+    image: "./sucursal_ciudad.webp",
   },
   {
     id: 2,
@@ -119,6 +120,7 @@ export const branches = [
     hours: "Lun: 11:30 - 20:00. Mar a Vie: 15:00 a 20:00. Sáb: 16:00 - 20:00",
     phone: WHATSAPP_NUMBER_DISPLAY,
     href: "https://maps.app.goo.gl/pNVWbDPJwtQ2Vevq6",
+    // image: "",
   },
 ];
 
@@ -140,7 +142,7 @@ export const footerData = {
       title: "Contacto",
       links: [
         { label: `WhatsApp: ${WHATSAPP_NUMBER_DISPLAY}`, href: WHATSAPP_URL },
-        "Email: hola@coolkies.com",
+        // "Email: hola@coolkies.com",
         "Horarios: 10:00 - 19:00",
       ],
     },

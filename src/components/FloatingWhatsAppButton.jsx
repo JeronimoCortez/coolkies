@@ -1,7 +1,7 @@
 import { WHATSAPP_URL } from "../assets/data";
 import { WhatsAppIcon } from "./Icons";
 
-const PREDEFINED_MESSAGE = "Hola! Quiero hacer un pedido de Coolkies";
+const PREDEFINED_MESSAGE = "Hola! Quiero hacer un pedido de Coolkies 🍪";
 
 function FloatingWhatsAppButton() {
   const whatsappLink = `${WHATSAPP_URL}?text=${encodeURIComponent(PREDEFINED_MESSAGE)}`;

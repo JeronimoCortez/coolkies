@@ -1,6 +1,9 @@
-function SectionHeader({ title, subtitle, light = false }) {
+function SectionHeader({ title, subtitle, light = false, className = "" }) {
   return (
-    <header className="mx-auto max-w-3xl text-center">
+    <header
+      className={`reveal mx-auto max-w-3xl text-center ${className}`}
+      data-reveal
+    >
       <h2
         className={`font-display text-3xl tracking-tight sm:text-4xl ${
           light ? "text-white" : "text-coolkies-dark"

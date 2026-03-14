@@ -13,12 +13,17 @@ function FlavorsShowcaseSection() {
         />
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {bestSellers.map((product) => (
-            <CookieCard key={product.id} product={product} actionLabel="Comprar" />
+          {bestSellers.map((product, index) => (
+            <CookieCard
+              key={product.id}
+              product={product}
+              actionLabel="Comprar"
+              revealDelay={index * 100}
+            />
           ))}
         </div>
 
-        <div className="mt-10">
+        <div className="reveal mt-10" data-reveal style={{ "--reveal-delay": "200ms" }}>
           <PrimaryButton href="#sabores" className="w-full justify-center" variant="dark" >
             Ver todos los productos
           </PrimaryButton>

@@ -7,7 +7,7 @@ function StoreLocationsSection() {
   return (
     <section id="mayorista" className="bg-coolkies-dark py-16 sm:py-20">
       <div className="section-shell grid items-center gap-10 lg:grid-cols-2 lg:gap-12">
-        <div>
+        <div className="reveal" data-reveal>
           <SectionHeader
             title="Tenes un negocio?"
             subtitle="Ofrece las mejores cookies a tus clientes. Precios especiales para mayoristas, cafeterias, restaurantes y eventos."
@@ -36,11 +36,15 @@ function StoreLocationsSection() {
           </PrimaryButton>
         </div>
 
-        <div className="overflow-hidden rounded-2xl">
+        <div
+          className="reveal overflow-hidden rounded-2xl"
+          data-reveal
+          style={{ "--reveal-delay": "120ms" }}
+        >
           <img
             src={wholesaleImage}
             alt="Cookies para negocios mayoristas"
-            className="h-[360px] w-full object-cover sm:h-[420px]"
+            className="h-[360px] w-full object-cover transition-transform duration-700 hover:scale-[1.02] sm:h-[420px]"
             loading="lazy"
           />
         </div>

@@ -1,9 +1,13 @@
 import { WHATSAPP_URL } from "../assets/data";
 import PrimaryButton from "./PrimaryButton";
 
-function CookieCard({ product, compact = false, actionLabel }) {
+function CookieCard({ product, compact = false, actionLabel, revealDelay = 0 }) {
   return (
-    <article className="group rounded-2xl border border-coolkies-gold/15 bg-white p-4 shadow-card transition-transform duration-300 hover:-translate-y-1 hover:border-coolkies-gold/30">
+    <article
+      className="reveal group rounded-2xl border border-coolkies-gold/15 bg-white p-4 shadow-card transition-transform duration-300 hover:-translate-y-1 hover:border-coolkies-gold/30"
+      data-reveal
+      style={{ "--reveal-delay": `${revealDelay}ms` }}
+    >
       <div className={`${compact ? "h-32" : "h-48"} overflow-hidden rounded-xl`}>
         <img
           src={product.image}

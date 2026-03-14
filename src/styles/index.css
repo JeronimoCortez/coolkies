@@ -22,4 +22,25 @@
   .section-shell {
     @apply mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8;
   }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+    transition: opacity 500ms ease, transform 500ms ease;
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

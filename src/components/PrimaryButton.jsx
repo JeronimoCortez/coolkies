@@ -19,7 +19,7 @@ function PrimaryButton({
   };
 
   const resolvedClassName = [
-    "inline-flex h-14 items-center justify-center gap-2 rounded-full px-8 text-base font-semibold transition-all duration-300",
+    "inline-flex h-14 items-center justify-center gap-2 rounded-full px-8 text-base font-semibold transition-all duration-300 transform-gpu hover:scale-[1.02] active:scale-[0.99]",
     variants[variant],
     className,
   ]

@@ -5,7 +5,7 @@ function FooterSection() {
     <footer className="bg-coolkies-dark py-12">
       <div className="section-shell">
         <div className="grid gap-10 md:grid-cols-2 xl:grid-cols-4">
-          <div>
+          <div className="reveal" data-reveal style={{ "--reveal-delay": "0ms" }}>
             <div className="inline-flex rounded-lg bg-coolkies-yellow px-3 py-2 font-display text-2xl text-coolkies-dark">
               {footerData.brand.name}
             </div>
@@ -33,8 +33,13 @@ function FooterSection() {
             </div>
           </div>
 
-          {footerData.sections.map((section) => (
-            <div key={section.title}>
+          {footerData.sections.map((section, index) => (
+            <div
+              key={section.title}
+              className="reveal"
+              data-reveal
+              style={{ "--reveal-delay": `${(index + 1) * 120}ms` }}
+            >
               <h3 className="text-lg font-semibold text-white">
                 {section.title}
               </h3>
@@ -65,7 +70,11 @@ function FooterSection() {
           ))}
         </div>
 
-        <div className="mt-10 flex items-center justify-center gap-2 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+        <div
+          className="reveal mt-10 flex items-center justify-center gap-2 border-t border-gray-700 pt-6 text-center text-sm text-gray-400"
+          data-reveal
+          style={{ "--reveal-delay": "120ms" }}
+        >
           <span>Hecho con</span>
           <svg
             className="h-4 w-4 text-coolkies-yellow"

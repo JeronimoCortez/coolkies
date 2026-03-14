@@ -1,8 +1,12 @@
 import { StarRating } from "./Icons";
 
-function TestimonialCard({ testimonial }) {
+function TestimonialCard({ testimonial, revealDelay = 0 }) {
   return (
-    <article className="rounded-2xl border border-coolkies-gold/10 bg-gray-50 p-6 transition-all duration-300 hover:border-coolkies-gold/20 hover:shadow-card">
+    <article
+      className="reveal rounded-2xl border border-coolkies-gold/10 bg-gray-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-coolkies-gold/20 hover:shadow-card"
+      data-reveal
+      style={{ "--reveal-delay": `${revealDelay}ms` }}
+    >
       <div className="flex items-center gap-4">
         <img
           src={testimonial.avatar}

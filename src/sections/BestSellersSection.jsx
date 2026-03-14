@@ -9,8 +9,8 @@ function BestSellersSection() {
         <SectionHeader title="Nuestras Sucursales" subtitle="Visitanos o pedi delivery" />
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
-          {branches.map((branch) => (
-            <LocationCard key={branch.id} branch={branch} />
+          {branches.map((branch, index) => (
+            <LocationCard key={branch.id} branch={branch} revealDelay={index * 120} />
           ))}
         </div>
       </div>
